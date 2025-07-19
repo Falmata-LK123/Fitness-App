@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background: #fff ;
+    line-height: 1.6;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+:root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+  }
+  ul {
+   list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+  img {
+    max-width: 100%;
+  }
+  /* Navbar */
+  .nav {
+    background: inherit;
+    padding: 19px;
+  }
+  .nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .main-menu ul {
+    display: flex;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+  .nav ul li a:hover {
+    color: var(--primary-color);
+  }
+  .navbar ul li:last-child a {
+    margin-left: 10px;
+  }
+  .navbar ul li a i {
+    margin-right: 10px;
+  }
+  .logo img {
+    width: 127px;
+  }
+  /* Hero section */
+  .hero{
+    margin-bottom: 50px;
+  }
+  .hero .container {
+    background: url(assets/Img/hero-bg.png) no-repeat;
+    background-size: contain;
+    background-position: center buttom;
+    height: 530px;
+
+  }
+  .hero .hero-content {
+    width: 75%;
+  }
+  .hero .hero-para{
+    width: 70%;
+    margin-bottom: 18px;
+  }
