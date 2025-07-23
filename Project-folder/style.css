@@ -30,7 +30,7 @@ body {
   img {
     max-width: 100%;
   }
-  /* Navbar */
+  /* Nav */
   .nav {
     background: #fff;
     padding: 19px;
@@ -40,22 +40,22 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .navbar .main-menu ul {
+  .nav .main-menu ul {
     display: flex;
   }
   .nav ul li a {
     display: block;
     padding: 10px 20px;
-    font-weight: 700;
+    font-weight: 600;
     transition: 0.5s;
   }
   .nav ul li a:hover {
     color: var(--primary-color);
   }
-  .navbar ul li:last-child a {
+  .nav ul li:last-child a {
     margin-left: 10px;
   }
-  .navbar ul li a i {
+  .nav ul li a i {
     margin-right: 10px;
   }
   .logo img {
@@ -70,17 +70,18 @@ body {
     }}
   .btn {
     display: inline-block;
-    padding: 12px 21px;
+    padding: 13px 20px;
     text-align: center;
     text-decoration: none;
-    font-weight: 650px;
+    font-weight: 600px;
     border: none;
-    border-radius: 11px;
+    border-radius: 10px;
     color: #333333;
     background: var(--light-color);
     cursor: pointer;
     transition: 0.4s;
   }
+
   .btn:hover {
     opacity: 0.8;
   }
@@ -88,6 +89,25 @@ body {
     color: #fff;
     background: var(--primary-color);
   }
+  /* Hamburger-button */
+  .hamburger-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    z-index: 1000;
+  }
+  .hamburger-button .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background: #333333;
+    margin: 5px 0;
+  }
+ .nav .hamburger-button {
+  display: block;
+ }
+ 
   @media (max-width: 960px) {
     .text-1 {
       font-size: 2.5rem;
@@ -98,6 +118,7 @@ body {
   .nav .main-menu {
       display: none;
     }}
+
     .mobile-menu {
       height: 100%;
       width: 250px;
@@ -106,8 +127,8 @@ body {
       position: fixed;
       z-index: 100;
       background: #fff;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      transition: right 0.4s ease-in-out;
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+      transition: right 0.3s ease-in-out;
   }
   .mobile-menu ul {
     margin-top: 100px;
@@ -119,7 +140,7 @@ body {
   }
   
   .mobile-menu ul li a {
-    font-size: 20px;
+    font-size: 19px;
     transition: 0.4s;
   }
   .mobile-menu.active {
@@ -134,7 +155,7 @@ body {
     background: url(assets/Img/hero-bg.png) no-repeat;
     background-size: contain;
     background-position: center buttom;
-    height: 530px;
+    height: 550px;
 
   }
   .hero .hero-content {
@@ -142,7 +163,7 @@ body {
   }
   .hero .hero-para{
     width: 70%;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   
   /* Video section */
@@ -206,7 +227,7 @@ body {
     background: var(--dark-color);
     color: #fff;
   }
-  .testimonials .testimonials-heading {
+  .testimonials .testimonials-h{
       max-width: 100%;
       text-align: center;
     }
@@ -234,7 +255,7 @@ body {
     .pricing .pricing-grid {
       display: grid;
       margin-top: 55px;
-      grid-template-columns: repeat(2, ifr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
     .pricing .pricing-box-para {
