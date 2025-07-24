@@ -64,31 +64,11 @@ body {
   .text-1 {
     font-size: 2rem;
   }
-    @media (max-width: 500px) {
+   @media (max-width: 500px) {
     .text-1 {
       font-size: 2rem;
     }}
-  .btn {
-    display: inline-block;
-    padding: 13px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600px;
-    border: none;
-    border-radius: 10px;
-    color: #333333;
-    background: var(--light-color);
-    cursor: pointer;
-    transition: 0.4s;
-  }
 
-  .btn:hover {
-    opacity: 0.8;
-  }
-  .btn-1 {
-    color: #fff;
-    background: var(--primary-color);
-  }
   /* Hamburger-button */
   .hamburger-button {
     display: none;
@@ -104,20 +84,14 @@ body {
     background: #333333;
     margin: 5px 0;
   }
- .nav .hamburger-button {
-  display: block;
- }
- 
-  @media (max-width: 960px) {
-    .text-1 {
-      font-size: 2.5rem;
-    }
-  }
   
   @media (max-width: 670px){
   .nav .main-menu {
       display: none;
-    }}
+    }
+  .nav .hamburger-button {
+  display: block;
+ }}
 
     .mobile-menu {
       height: 100%;
@@ -156,8 +130,26 @@ body {
     background-size: contain;
     background-position: center buttom;
     height: 550px;
-
   }
+  @media (max-width: 670px) {
+  .hero .container {
+      background: url('/images/hero-bg-mobile.png') no-repeat;
+      background-size: 350px 400px;
+      background-position: bottom;
+      height: 770px;
+    }
+  .hero .hero-content,
+    .hero .hero-text {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero .hero-buttons .btn {
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }}
+
   .hero .hero-content {
     width: 70%;
   }
@@ -165,6 +157,32 @@ body {
     width: 70%;
     margin-bottom: 20px;
   }
+    .btn {
+    display: inline-block;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600px;
+    border: none;
+    border-radius: 10px;
+    color: #333333;
+    background: var(--light-color);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+  .btn-1 {
+    color: #fff;
+    background: var(--primary-color);
+  }
+  .hero .hero-button .btn {
+      margin-bottom: auto;
+      display: inline;
+      width: 20%;
+    }
   
   /* Video section */
   .container-1 {
@@ -191,7 +209,7 @@ body {
   .text-2 {
     margin: 40px 0 20px;
     font-size: 2.2rem;
-    line-height: 1.4;
+    line-height: 1.6;
     font-weight: normal;
   }
    .text-2{
@@ -227,7 +245,9 @@ body {
     background: var(--dark-color);
     color: #fff;
   }
-  .testimonials .testimonials-h{
+  /* Media Queries */
+  @media (max-width: 960px) {
+  .testimonials .testimonials-h {
       max-width: 100%;
       text-align: center;
     }
@@ -236,7 +256,7 @@ body {
     .pricing .pricing-grid,
     .footer .footer-grid {
       grid-template-columns: 1fr;
-    }
+    }}
     /* Pricing */
     .text-4 {
       margin: 20px 0 10px;
@@ -283,4 +303,86 @@ body {
       margin: 35px 0;
     }
 
+    /* FAQ */
+    .faq.{
+      padding: 40px 0;
+    }
+    .faq .faq-main {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    .faq .faq-main .faq-main-h {
+      padding: 20px 0;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .faq .faq-main .faq-main-h h4 {
+      font-weight: 600;
+      width:  100%;
+    }
+    .faq .faq-main .faq-main-h i {
+      position: absolute;
+      font-size: 1.4rem;
+      right: 0;
+      top: 35px;
+      cursor: pointer;
+    }
+    .faq .faq-main .faq-main-b {
+      display: none;
+    }
+    .faq .faq-main .faq-main-b.yes {
+      display: block;
+    }
+    .faq ul.faq-menu {
+      max-width: 400px;
+      margin: auto;
+      font-weight: 600;
+      background: #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .faq ul.faq-menu li {
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .faq ul.faq-menu li.active {
+      background: var(--primary-color);
+      color: #fff;
+    }
+    .text-5 {
+      margin: 20px 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+     @media (max-width: 670px) {
+     .text-5 {
+      font-size: 1.1rem;
+    }}
+
+    /* Footer */
+    .footer {
+      padding: 40px 0;
+    }
+    .footer h4 {
+      margin-bottom: 10px;
+    }
+    .footer ul li {
+      line-height: 2.7;
+    }
+    .footer a {
+      color: #cccccc;
+    }
+    .footer i {
+      font-size: 1.7rem;
+      margin-right: 10px;
+    }
+    .footer-para {
+      font-size: 20px;
+    }
 
